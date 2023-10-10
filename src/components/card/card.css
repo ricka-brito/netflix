@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.slideitem{
+    position: absolute;
+    top:0;
+    width: 700px;
+    height: auto;
+}
+
+.content{
+    font-family: poppins;
+    width: 36.5vw;
+    height: 393.75px;
+    border-radius: 20px;
+    align-self: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    padding: 5%;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media (max-width:600px){
+    .content{
+        width: 89vw;
+        height: 500px;
+        background-position: center;
+    }
+    .tit{
+        margin-left: 4%;
+    }
+    .subtit{
+        margin-left: 4%;
+        margin-bottom: 4%;
+    }
+    .desc{
+        text-align: justify;
+        margin-right: 4%;
+        margin-left: 4%;
+        margin-bottom: 4%;
+    }
+}
+
+.subtit{
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.infos{
+    font-size: 20px;
+    margin: 0;
+    
+}
+
+.infos::before{
+    content: '\00a0';
+}
+
+.desc{
+    opacity: 0;
+    height: 0;
+    transition: all ease-out 0.2s;
+
+
+
+}
+
+.content:hover .desc{
+    height: auto;
+    opacity: 1;
+    transition: all ease-out 0.2s;
+}
+
+
+.content:hover .tit, .subtit{
+    transition: all ease-out 1s;
+}
+
+.subtit, .tit{
+    transition: all ease-out 1s;
+}
+
+

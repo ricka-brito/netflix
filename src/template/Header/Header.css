@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    font-family: Poppins;
+    height: 60px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    margin: 1%;
+}
+
+#titulo{
+    margin: 5%;
+}
+
+.item{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    color: #585858;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .item{
+        display: none;
+    }
+    .searchform{
+        display: none;
+    }
+}
+
+@media (min-width: 600px){
+    .bm-burger-button{
+        display: none;
+    }
+}
+
+.item:hover{
+    background-color: #242424;
+    color: #fff;
+    box-shadow: 5px 10px 30px rgba(53, 53, 52, 0.1);
+    transition: all ease .2s;
+}
+
+.searchform{
+    max-width: 500px;
+    position: relative;
+}
+
+.pesquisa{
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    border: 0;
+    background-color: rgba(245, 245, 245, 0.8);
+    padding-left: 10px;
+}
+
+.icone{
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #3a3a3a;
+}
+
+
+.pesquisa::placeholder{
+    padding-left: 10px;
+}
+
+.pesquisa:focus{
+    outline: none;
+}
+
+.bm-burger-bars {
+    background: #373a47;
+  }
+.bm-burger-button {
+    position: relative;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 50%;
+}
+  
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    background-color: #e0e0e0;
+    top: 0;
+    padding: 6%;
+}
+
+
+.bm-item-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item{
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    color: #585858;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+    margin-top: 8%;
+    text-decoration: none;
+}
+
+#pesquisa{
+    margin-top: 20%;
+    width: 60vw;
+}
+
+#icone{
+    top: 85%;
+    right: 3%;
+    left: unset;
+}
+
+#linha{
+    width: 90%;
+    height: 0px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}

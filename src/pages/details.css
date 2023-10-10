@@ -1,0 +1,16 @@
+.infosdiv {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-self: center;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.poster {
+    width: 40%;
+}
+
+.tit {
+    display: flex;
+}

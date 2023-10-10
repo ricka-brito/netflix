@@ -1,0 +1,43 @@
+
+
+
+.slider{
+    align-self: center;
+}
+
+
+.slideitem{
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+    align-self: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.slide{
+    transition: all 200ms ease-in-out;
+    height: 500px;
+    width: 100%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+@media (max-width: 600px){
+    .slide{
+        margin-left: 3%;
+    }
+}
+
+.slide:hover{
+    transition: all 200ms ease-in-out;
+    transform: scale(1.01);
+}
+
+.titulo{
+    font-family: poppins;
+    margin-left: 3%;
+    margin-top: 1%;
+    font-weight: 400;
+}
+
